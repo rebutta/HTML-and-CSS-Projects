@@ -1,0 +1,18 @@
+body {
+	background-color: #0f0f0f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+}
+
+footer, head, span, p, form, label, div, a {
+	color: white;
+}
+
+li {
+	color: white;
+}
+
+/* if you're reading this it's probably because you are wondering what this is. I made this and add it to all of the 
+html files (for the most part) because the white pages are blinding */
