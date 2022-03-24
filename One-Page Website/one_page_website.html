@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="eyeSaver.css">
+<link rel="stylesheet" type="text/css" href="./css/eyeSaver.css">
+<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
 	<head>
 		<meta charset="utf-8">
 		<title>How to Skateboard!</title>
@@ -11,9 +12,15 @@
 		<div>
 			<div>
 				<ul>
-					<a href="#home" id="link"><li>HOME</li>
-					<a href="#gallery" id="link"><li>PICTURE/VIDEO GUIDE</li>
-					<a href="#contact" id="link"><li>CONTACT US</li>
+					<div class="wrap">
+						<div class="menu-container">
+							<ul class="menu">
+							   <a href="#home"><li>HOME</li></a> 
+							   <a href="#gallery"><li>GALLERY</li></a> 
+							   <a href="#contact"><li>CONTACT US</li>
+							</ul>
+						</div>
+					</div>
 				</ul>
 			</div>
 		</div>
@@ -21,9 +28,9 @@
 
 		<!-- HOME -->
 		<div id="home">
-			<div>
-				<div>
-					<span>The Basics to Skateboarding!</span>
+            <div class="container">
+				<div class="text-center">
+					<span class="head-main">The Basics to Skateboarding!</span>
 				</div>
 			</div>
 		</div>
@@ -37,11 +44,11 @@
 				<div>
 						
 					<!-- PHOTO CONTAINER 1 -->
-					<div>
-						<div>
+                    <div class="photo-container">
+                        <div class="photo">
 							<img src="./images/skateboardDeck.png" alt="">
-							<div>
-								<h3>Skateboard Deck (above)</h3>
+                            <div class="photo-overlay">
+                                <h3 class="white-head">Skateboard Deck</h3>
 								<p>The part of the board that the rider stands on.<br>
 								Typically made out of 5-9 layers of wood!
 								</p>
@@ -51,11 +58,11 @@
 					<!-- END PHOTO CONTAINER 1 -->
 
 					<!-- PHOTO CONTAINER 2 -->
-					<div>
-						<div>
+                    <div class="photo-container">
+                        <div class="photo">
 							<img src="./images/skateboardTrucks.png" alt="">
-							<div>
-								<h3>Skateboard Truck (above)</h3>
+                            <div class="photo-overlay">
+                                <h3 class="white-head">Skateboard Truck</h3>
 								<p>Part of the skateboard use to hold the wheels and balance the weight of the rider.</p>
 							</div>
 						</div>
@@ -63,11 +70,11 @@
 					<!-- END PHOTO CONTAINER 2 -->
 					
 					<!-- PHOTO CONTAINER 3 -->
-					<div>
-						<div>
+                    <div class="photo-container">
+                        <div class="photo">
 							<img src="./images/skateboardWheel.png" alt="">
-							<div>
-								<h3>Skateboard Wheels (above)</h3>
+                            <div class="photo-overlay">
+                                <h3 class="white-head">Skateboard Wheels</h3>
 								<p>Used to propel the skateboard forward.<br>
 								Wheels are made with polyurethane for a smooth ride!
 								</p>
@@ -75,46 +82,43 @@
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 3 -->
-					
-					<!-- VIDEO CONTAINER 1 -->
-					<div>
-						<div>
-							<iframe width ="640" height="420" src="https://www.youtube.com/watch?v=p3NXd3DhH08" frameborder="10"></iframe>
-							<blockquote 
-							<p>Watch the video by Braile Skateboarding to learn the basics of skating!</p>
-							</blockquote>
-						</div>
-					</div>
-					<!-- END VIDEO CONTAINER 1 -->
-							
 				</div>
 			</div>
+					
+			<!-- VIDEO CONTAINER 1 -->
+			<div class="video-container">
+				<div class="video">
+					<iframe width ="640" height="420" src="https://www.youtube.com/embed/p3NXd3DhH08" frameborder="10"></iframe>
+				</div>
+			</div>
+			<!-- END VIDEO CONTAINER 1 -->
+							
 		</section>
 		<!-- END GALLERY -->
 		
 		
 		<!-- RSVP -->
-		<section>
-			<div id="contact">
-				<div>
-					<h1>Contact Us!</h1>
-					<div>	
-						<h4><span>You're one lesson away from being a pro.<span>
-							<br />Book your lesson today!
-						</h4>
-						<p>
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Contact Us!</h1>
+					<div class="reservation">
+						<h3><span>You're one lesson away from being a pro.</span>
+							<br>Book your lesson today!
+						</h3>
+						<p class="rsvp-text">
 							Contact us below with your info and any questions to get started!
 						</p>
-						<div>
+						<div class="form-rsvp">
 							<form action="" method="post">
-								First name: <input class="rsvp" type="text" name="First_Name">
-								Last name: <input class="rsvp" type="text" name="Last_Name">
-								Email: <input class="rsvp" type="text" name="Email Address">
-								Questions/Comments: <input class="rsvp" type="text" name="QuestionComments">
+								<input class="rsvp" type="text" placeholder="First Name">
+								<input class="rsvp" type="text" placeholder="Last Name">
+								<input class="rsvp" type="text" placeholder="Email Address">
+								<input class="rsvp" type="text" placeholder="Questions?">
 								<div class="form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
-								<div>
+								<div class="submit">
 									<input type="submit" value="Submit">
 								</div>
 							</form>
@@ -124,7 +128,6 @@
 			</div>
 		</section>
 		<!-- END RSVP -->
-		
 		
 		<!-- FOOTER -->
 		<div>
